@@ -1188,3 +1188,32 @@ textarea.contact-input {
   cursor: not-allowed;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  color: #00e6ff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-icons a {
+  color: #00e6ff;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
+  transform: scale(1.1);
+}
