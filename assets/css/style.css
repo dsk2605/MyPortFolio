@@ -1217,3 +1217,114 @@ textarea.contact-input {
   text-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
   transform: scale(1.1);
 }
+
+/* ===========================================
+   VIEW MORE PAGE - THEME MATCH + FIXED NAVBAR
+=========================================== */
+
+/* Match your dark-cyber theme */
+body {
+  background: linear-gradient(135deg, #070b14, #0b0f1d);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 90px; /* prevent navbar overlap */
+}
+
+/* Make header fixed like on index.html */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 14, 24, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Section styling */
+.recordings-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  color: #00ffff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px #00ffff80;
+}
+
+.section-subtitle {
+  color: #b0b0b0;
+  margin-bottom: 50px;
+  font-size: 2.6rem;
+}
+
+/* Grid layout */
+.recordings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Card styling */
+.recording-card {
+  background: rgba(20, 25, 35, 0.85);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 380px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.recording-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+  border-color: #00ffff;
+}
+
+.recording-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+.recording-card h3 {
+  color: #00ffff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.recording-card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.view-btn {
+  display: inline-block;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #00ffff;
+  color: #111;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+

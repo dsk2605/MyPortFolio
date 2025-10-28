@@ -64,3 +64,38 @@ faders.forEach(fader => {
   fader.style.transform = "translateY(40px)";
   appearOnScroll.observe(fader);
 });
+
+/* =============================
+   VIEW MORE PAGE VIDEO PLAYER
+============================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".recording-card");
+  const modal = document.getElementById("videoModal");
+  const video = document.getElementById("videoPlayer");
+  const closeBtn = document.getElementById("closeModal");
+
+  if (cards && modal && video && closeBtn) {
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const src = card.getAttribute("data-video");
+        video.src = src;
+        modal.classList.add("active");
+        video.play();
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("active");
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.remove("active");
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+  }
+});
